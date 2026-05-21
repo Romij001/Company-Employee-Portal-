@@ -1,0 +1,222 @@
+body {
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+
+}
+
+.login-main-con {
+  background-color: #34B3E4;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.FP-main {
+background-color: #34B3E4;
+height: 100vh;
+width: 100%;
+justify-content: center;
+align-items: center;
+display: flex;
+}
+
+
+
+
+
+.Name-form {
+  border: 2px solid;
+  border-spacing: 0;
+  width: 700px;
+  border-radius: 10px;
+  word-spacing: 15px;
+  color: #fff;
+  font-size: 5%;
+  font: 1em arial;
+}
+
+
+.FP-Name {
+  border: 2px solid;
+  border-spacing: 0;
+  width: 700px;
+  border-radius: 10px;
+  word-spacing: 15px;
+  color: #fff;
+  font-size: 1%;
+  font: 1em arial;
+}
+
+
+
+
+/* Container for the login box */
+
+.login-container {
+  /* position: absolute;
+  top: 145px; */
+  /* padding: 20px 30px; */
+  background-color: whitesmoke;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  width: 420px;
+  height: 440px;
+  border-radius: 25px;
+  text-align: center;
+
+}
+
+@media (max-width: 450px) {
+  .login-container {
+    width: 300px;
+    height: 420px;
+  }
+
+  .FP_body {
+    width: 300px;
+    height: 420px;
+  }
+
+}
+
+
+
+
+
+.registration_form {
+  position: absolute;
+  top: 145px;
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  /* height: 400px; */
+  border-radius: 25px;
+  text-align: left;
+}
+
+.FP_body {
+  background-color: whitesmoke;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  width: 420px;
+  min-height: 450px;
+  border-radius: 25px;
+  text-align: center;
+
+}
+
+.FP_body input[type="text"],
+.FP_body input[type="password"],
+.FP_body input[type="email"] {
+  width: 85%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+
+/* Login form heading */
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+/* Form input styles */
+.login-form input[type="email"],
+.login-form input[type="password"],
+.login-form input[type="text"] {
+  width: 70%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+
+
+
+.FP-head {
+  text-align: center;
+}
+
+/* Checkbox and label for show password */
+.show-password {
+  margin-bottom: 15px;
+  font-size: 14px;
+  text-align: center;
+}
+
+
+
+/* Login button */
+.login-form button {
+  width: 70%;
+  padding: 10px;
+  background-color: #007c9d;
+  margin-bottom: center;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+}
+
+.button-class {
+  background-color: #007c9d;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 200px;
+}
+
+
+
+
+
+.login-form button:hover {
+  background-color: #005f73;
+}
+
+/* Bottom links */
+.links {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.links a {
+  color: #007c9d;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
