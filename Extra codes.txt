@@ -1,0 +1,31 @@
+    <label for="PersonSelect">Persion(List of Officials) Select:</label><br><br>
+            <input type="hidden" id="pSelectName" name="mailedPerson">
+            <select id="PersonSelect" name="PersonSelect"  required>
+                <option value="0">Select Employee</option>
+                 <?php 
+                        $conn = mysqli_connect("localhost", "root", "", "Data_Employee_Portal");
+                        if (!$conn) {
+                            die("Connection failed: " . mysqli_connect_error());
+                        }
+                        $user_id = $_SESSION['UserID'];
+                        $stmt = mysqli_stmt_init($conn);
+                        mysqli_stmt_prepare($stmt, "SELECT * FROM employee_registration WHERE Status = 1 AND  UserID != $user_id");
+                        mysqli_stmt_execute($stmt);
+                        $res = mysqli_stmt_get_result($stmt);
+                        if (mysqli_num_rows($res) > 0) {               
+
+                          // output data of each row
+                            while($row = mysqli_fetch_assoc($res)) {
+                                $user_id = (!empty($row["UserID"]))? $row["UserID"] : "";
+                                $full_name = (!empty($row["FullName"]))? $row["FullName"] : "";
+                                $emp_email = (!empty($row["Email"]))? $row["Email"] : "";
+                    ?>
+                    <option value="<?php echo $user_id ?>"><?php echo $full_name ?></option>
+                    <?php
+                            }
+                        }
+                    ?>
+            </select>
+
+
+Persion(List of Officials) Select: ${pselectName}

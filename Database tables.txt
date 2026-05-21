@@ -1,0 +1,35 @@
+DROP TABLE employee_registration
+CREATE TABLE employee_registration (
+			  UserID int(11) NOT NULL AUTO_INCREMENT,
+			  EmployeeID varchar(25) NOT NULL,
+                          FullName varchar(100) NOT NULL,
+			  Designation varchar(100) NOT NULL,
+                          EmployeeType varchar(50) NOT NULL,
+			  Gender varchar(100) NOT NULL,
+			  Email varchar(100) NOT NULL,
+			  Password varchar(100) NOT NULL,
+			  Status int(100) NOT NULL,
+			  PRIMARY KEY (UserID))
+
+
+
+CREATE TABLE Leave_Application (
+			  ID int(11) NOT NULL AUTO_INCREMENT,
+                          EmployeeName varchar(100) NOT NULL,
+			  Designation varchar(100) NOT NULL,
+                          TypeOfLeave int(100) NOT NULL,
+                          LeaveName varchar(100) NOT NULL,
+			  Datefrom DATE NOT NULL,
+			  DateTo DATE NOT NULL,
+                          Reason varchar(500) NOT NULL,
+			  MailedPersonId varchar(100) NULL,
+			  MailedPersonName varchar(100) NULL,
+			  ApprovedById int(11) NULL,
+			  ApprovedByName varchar(100) NULL,
+			  ApprovalStatus int(11) DEFAULT NULL,
+			  PRIMARY KEY (ID))
+
+
+
+
+
